@@ -1,0 +1,225 @@
+*{
+   margin: 0;
+   padding: 0;
+   font-family: Inter; 
+}
+
+body{
+    background-color: #000;
+    color: white;
+    text-align: left;    
+}
+
+header{
+    width:634px;
+    display:block;
+    margin-left: 25%;
+    
+}
+.heading{
+    color: #fff;
+    font-family: Inter;
+    font-size: 64px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+   
+}
+
+.main-container{
+    display: flex;
+    position:sticky;
+    flex-wrap: wrap;
+    height: 100vh;
+   
+   
+    margin-left:25%;
+    /* border: 1px solid wheat; */
+}
+ 
+.main{  
+    position: relative;
+    flex-wrap: wrap;
+}
+
+.input-field{
+    color: #fff;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height:normal;
+    background-color:transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    width:465px;
+    height: 50px;
+    padding: 5px;
+    margin-top:2px; 
+    
+}
+
+
+
+input#student{
+    width: 13px;
+    height: 13px;
+    margin-top:15px;
+}
+
+input#employee{
+    width: 13px;
+    height: 13px;
+    margin-top:15px;
+}
+
+.input-field:focus {
+    outline: none;
+    border-left: none;
+    border-top: none;
+    border-right:none;
+}
+
+  .btn{
+    margin-top: 20px;
+    width: 20px;
+    height: 13px;
+
+}
+
+button{
+    border-top: 1px solid gray;
+    border-left: 1 px solid gray;
+}
+.submit{
+    width: 200px;
+    height: 50px;
+    margin-top: 10px;
+    font-size: 24px;
+    font-weight: 300;
+}
+.foot{
+    border:none;
+    display: block;
+    margin-left: 25%;
+    position: relative;
+    margin-top: -130px;
+    padding: 10px;
+}
+ 
+/* Media for moblie user */
+@media (max-width: 480px) {
+    header {
+        width: 100%;
+        text-align: center;
+        margin-left: 0;
+    }
+
+    .heading {
+        font-size: 32px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        align-items: center;
+        margin-left: 0;
+    }
+
+    .input-field {
+        width: 90%;
+    }
+
+    .submit {
+        width: 100%;
+    }
+
+    .foot {
+        text-align: center;
+        margin-left: 0;
+        margin-top: 0;
+    }
+}
+
+
+/* Media for tablet user */
+@media (min-width: 481px) and (max-width: 768px) {
+    header {
+        width: 90%;
+        margin-left: 5%;
+    }
+
+    .heading {
+        font-size: 48px;
+    }
+
+    .main-container {
+        flex-direction: column;
+        margin-left: 5%;
+    }
+
+    .input-field {
+        width: 80%;
+    }
+
+    .submit {
+        width: 80%;
+    }
+
+    .foot {
+        margin-left: 5%;
+    }
+}
+
+/* Media for desktop user */
+
+@media (min-width: 769px) and (max-width: 1024px) {
+    header {
+        width: 80%;
+        margin-left: 10%;
+    }
+
+    .heading {
+        font-size: 56px;
+    }
+
+    .main-container {
+        margin-left: 10%;
+    }
+
+    .input-field {
+        width: 70%;
+    }
+
+    .submit {
+        width: 60%;
+    }
+
+    .foot {
+        margin-left: 10%;
+        margin-top: 0;
+    }
+}
+
+/* Larger Desktops (1025px and above) */
+@media (min-width: 1025px) {
+    header {
+        width: 634px;
+        margin-left: 25%;
+    }
+
+    .main-container {
+        margin-left: 25%;
+    }
+
+    .input-field {
+        width: 465px;
+    }
+
+    .submit {
+        width: 200px;
+    }
+
+    .foot {
+        margin-left: 25%;
+    }
+}
